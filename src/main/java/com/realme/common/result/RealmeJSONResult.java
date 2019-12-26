@@ -67,7 +67,7 @@ public class RealmeJSONResult {
     }
 
     public RealmeJSONResult(Object data) {
-        this.status = 10000;
+        this.status = 200;
         this.msg = "OK";
         this.data = data;
     }
