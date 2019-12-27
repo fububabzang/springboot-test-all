@@ -55,8 +55,7 @@ public class BIOServer {
             InputStream inputStream = socket.getInputStream();
             while (true) {
                 System.out.println("线程的信息是: id=" + Thread.currentThread().getId() + "名字:" + Thread.currentThread().getName());
-
-                System.out.println("等待读取**********************");
+                
                 int read = inputStream.read(bytes);
 
                 if (read != -1) {
