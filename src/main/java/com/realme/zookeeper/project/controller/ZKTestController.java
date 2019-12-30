@@ -48,7 +48,9 @@ public class ZKTestController {
      */
     @GetMapping("/getZK")
     public RealmeJSONResult getZK(@RequestParam("path") String path ){
-        return RealmeJSONResult.ok(zkApi.getData(path, new WatcherApi()));
+        String data = zkApi.getData(path, new WatcherApi());
+        logger.info("获取到的节点是: {} ; 节点的值是: {}" , path , data);
+        return RealmeJSONResult.ok(data);
     }
 
     /**
