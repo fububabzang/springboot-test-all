@@ -29,4 +29,5 @@
         <appender-ref ref="FILE"/>
         <appender-ref ref="LOGSTASH"/>
     </root>
+
 </configuration>
